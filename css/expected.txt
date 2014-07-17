@@ -1,0 +1,12 @@
+EXPECTED OUTPUT
+
+.test
+.testOne
+.testTwo
+.testThree
+.testFour
+.testFive
+.testSix
+.informal
+.something
+.class

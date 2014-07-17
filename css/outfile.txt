@@ -1,0 +1,11 @@
+.test
+.AGAIN
+.AGAINWHAT
+.testOne
+.testTwo2
+.testFour
+.testFive
+.testSix
+.informal
+.something
+.class

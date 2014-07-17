@@ -1,5 +1,17 @@
-test
-file
+#header>.test.AGAIN.AGAINWHAT
+.testOne
+{ testOne2 }
+.testTwo { 
+.testTwo2 
+}
+.testThree { .testThree2 }
 
-hahaha
-poop
+.testFour 
+{ 
+    .testFour2
+}
+
+.testFive >.testSix
+#formal.informal>#extra.something
+#div.class#f
+
