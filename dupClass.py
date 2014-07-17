@@ -12,7 +12,8 @@ filename        = 'css/testfile.txt'
 outFile         = 'css/outfile.txt'
 
 pattern         = '\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*'
-stopPattern     = '{|}'
+startPattern    = '{'
+stopPattern     = '}'
 outPattern      = []
 inStatement     = False
 
@@ -22,19 +23,31 @@ with open(filename) as f:
 
 for line in lines:
     match           = re.findall(pattern, line)
-    breakStartMatch = re.search(stopPattern, line)
+    breakStartMatch = re.search(startPattern, line)
+    breakStopMatch  = re.search(stopPattern, line)
 
-    if match and not inStatement:
+    # print 'line: %s' % line
+    # print '\tmatch: %r' % match
+    # print '\tinStatement: %s\n' % inStatement
+
+    if breakStartMatch and breakStopMatch:
+        preTest = str(line).split('{')[0]
+        sufTest = str(line).split('}')[1]
+
+        outPattern.append(preTest)
+        outPattern.append(sufTest)
+        continue
+
+    elif match and not inStatement:
         new_line = '\n'.join(map(str, match)) + '\n'
         outPattern.append(new_line)
 
     # parse through until stop Pattern
     if breakStartMatch:
-        inStatement = not inStatement
-        continue
+        inStatement = True
+    elif breakStopMatch:
+        inStatement = False
 
 with open(outFile, 'w') as f:
     f.seek(0)
     f.writelines(outPattern)
-
-
