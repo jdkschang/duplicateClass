@@ -21,11 +21,12 @@ sanitizeList    =   [
                     'css/output/bootOut.txt',
                     ]
 
-outPattern      = []
-duplicateList   = []
-dupBool         = False
-
 for idx,inFile in enumerate(sanitizeList):
+    
+    outPattern      = []
+    duplicateList   = []
+    dupBool         = False
+
     #parse css file to extract class names
     with open(inFile) as f:
         lines = f.readlines()

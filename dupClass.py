@@ -25,10 +25,11 @@ outputList       =   [
 pattern         = '\.-?[_a-zA-Z]+[_a-zA-Z0-9-]*'
 startPattern    = '{'
 stopPattern     = '}'
-outPattern      = []
+
 inStatement     = False
 
 for idx,inFile in enumerate(inputList):
+    outPattern          = []
     #parse css file to extract class names
     with open(inFile) as f:
         lines = f.readlines()

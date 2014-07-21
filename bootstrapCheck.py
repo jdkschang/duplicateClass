@@ -1,7 +1,6 @@
 #!/usr/bin/python
 import re
 
-import dupClass
 import sanitizedDup
 import dupDecorator
 
@@ -13,11 +12,11 @@ import dupDecorator
 # Notes:        ---
 
 compareList     =   [
-                    'css/decoratorDupList.txt',
-                    'css/bootOut.txt'
+                    'css/output/decoratorDupList.txt',
+                    'css/output/bootOut.txt'
                     ]
 
-outFile         = 'css/bootstrapDuplicates.txt'
+outFile         = 'css/output/bootstrapDuplicates.txt'
 
 outPattern      = []
 duplicateList   = []

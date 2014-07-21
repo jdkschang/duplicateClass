@@ -143,8 +143,7 @@
 .flex-caption
 .alt
 .no-js
-.googleapis
-.com
+.flex-caption
 .main-container
 .main-header
 .main-content

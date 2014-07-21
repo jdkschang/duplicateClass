@@ -13,13 +13,13 @@ cmsFile         = 'css/cmsOut.txt'
 homeFile        = 'css/homeOut.txt'
 
 # output duplicate list
-compiledDec     = 'css/decoratorDupList.txt'
-outDupFile      = 'css/dupList.txt'
+compiledDec     = 'css/output/decoratorDupList.txt'
+outDupFile      = 'css/output/dupList.txt'
 
 decoratorList   =   [
-                    'css/baseOut.txt',
-                    'css/cmsOut.txt',
-                    'css/homeOut.txt'
+                    'css/output/baseOut.txt',
+                    'css/output/cmsOut.txt',
+                    'css/output/homeOut.txt'
                     ]
 
 outPattern      = []

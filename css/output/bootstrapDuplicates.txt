@@ -1,3 +1,4 @@
+.flex-caption
 .active
 .info
 .form-control

@@ -1,6 +1,5 @@
 .loading
 .cols_wrapper
-.flex-caption
 .flexslider
 .flex-controls
 .drawer
