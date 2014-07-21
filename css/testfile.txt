@@ -11,7 +11,11 @@
     .testFour2
 }
 
+.testFour
+.testTwo
+
 .testFive >.testSix
 #formal.informal>#extra.something
 #div.class#f
+.testOne
 
