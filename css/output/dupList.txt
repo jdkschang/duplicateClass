@@ -1,8 +1,0 @@
-.loading
-.cols_wrapper
-.flexslider
-.flex-controls
-.drawer
-.header
-.drawer-toggle
-.expand
